@@ -1,0 +1,520 @@
+/* Reset default margin, padding, border, and box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; /* 100 corresponds to the "Thin" font weight in Roboto */
+}
+
+/* Set up body styles for a flexible column layout with margins */
+body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 5vw 10vw;
+    background-image: url(images/superbackground2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.app {
+    background-color: white;
+    z-index: -1;
+}
+
+/* Full Header Container */
+.header-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37), rgba(0, 0, 0, 0.2)), url(images/header_background.jpg);
+    background-size: 100% auto; /* Use 'auto' or '100%' */
+    background-position: center 0vw; /* Adjust the top margin here */
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 35vw;
+    color: white;
+}
+
+/* NavBarMenu */
+.header-nav-bar {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0vw 3vw 0 3vw;
+    padding: 1vw;
+    font-size: 0.7vw;
+}
+
+.header-index-button > a {
+    text-decoration: none;
+    color: white;
+}
+
+/* List menu within the navigation bar */
+.header-list-menu {
+    display: flex;
+    margin: 0;
+    margin-bottom: 10px; /* Add margin between list items */
+    padding: 0.5vw; /* Add padding to the content inside the list items */
+    list-style-type: none;
+}
+
+/* Style for list items in the navigation menu */
+.header-list-menu > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 1vw;
+}
+
+/* Header title container styles */
+.header-title-container {
+    padding-top: 6vw;
+}
+
+.header-mid-title-list-1,
+.header-mid-title-list-2 {
+    list-style-type: none;
+}
+
+/* Header middle title styles */
+.header-mid-title {
+    list-style-type: none;
+    margin-top: -4vw;
+    padding-bottom: 2vw;
+    font-size: 5vw;
+}
+
+.header-mid-explore-button {
+    padding: 0.5vw 2.5vw 0.5vw 2.5vw;
+    border: 1px solid white;
+    font-size: 0.7vw;
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+/* Container for main places */
+.main-places-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    padding: 8vw;
+}
+
+/* Additional styling for the places container */
+.main-places-container-info {
+    display: flex;
+    flex-direction: column;
+    padding: 7vw;
+    flex-wrap: nowrap;
+    margin: 5vw 3vw 0vw 5vw;
+    margin-left: 5vw;
+    margin-right: 3vw;
+}
+
+.main-places-container-info-tittle-1,
+.main-places-container-info-tittle-2 {
+    font-size: 3vw;
+}
+
+.main-places-container-info-tittle-1 {
+    position: relative;
+    top: -7vw;
+    left: 4vw;
+}
+
+.main-places-container-info-tittle-2 {
+    position: relative;
+    top: -7vw;
+    left: 11vw;
+}
+
+.main-places-container-info-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* Three rows with equal height */
+    gap: 10px; /* Adjust the gap between columns and rows as needed */
+    position: relative;
+    padding-top: 1vw;
+}
+
+.main-places-container-info-content > li {
+    font-size: 1.5vw;
+    justify-content: space-around;
+    padding: 0vw 3vw 0vw 2vw;
+    list-style-type: none;
+}
+
+.main-places-container-info-container-button {
+    position: relative;
+    left: 19vw;
+    padding: 1vw;
+}
+
+.main-places-container-info-button {
+    text-decoration: none;
+    font-size: 1vw;
+    color: black;
+    border: 1px solid grey;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    text-align: center;
+}
+
+.main-discover-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20vw;
+}
+
+.main-discover-container-video-view-1 {
+    position: relative;
+    left: -6vw;
+    margin: 0;
+    padding: -5vw;
+    width: 35vw;
+    height: 20vw;
+}
+
+.main-discover-container-info-title-1,
+.main-discover-container-info-title-2 {
+    text-align: left;
+    font-size: 3vw;
+}
+
+.main-discover-container-info-title-2 {
+    position: relative;
+    left: 6vw;
+}
+
+.main-discover-container-info-content {
+    position: relative;
+    left: 1vw;
+    top: 1vw;
+    margin-left: -1vw;
+    margin-right: -5vw;
+    padding-top: 1vw;
+}
+
+.main-discover-container-info-content > li {
+    font-size: 1vw;
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 1vw;
+}
+
+/* Styles for images within the main places container */
+.main-places-container-img {
+    left: -7vw;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.main-places-container-img-view-1,
+.main-places-container-img-view-2,
+.main-places-container-img-view-3 {
+    height: 0;
+    padding: 30vw 8vw 0 12vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 1; /* Set a higher z-index than view-1 */
+}
+
+.main-places-container-img-view-2 {
+    top: 1.5vw;
+    left: -4vw;
+    height: 0;
+    padding: 25vw 8vw 0 7vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: 0; /* Set a lower z-index than view-2 */
+}
+
+.main-places-container-img-view-3 {
+    top: 4.5vw;
+    left: -6vw;
+    height: 0;
+    padding: 19vw 8vw 0vw 0vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    z-index: -1; /* Set a lower z-index than view-2 */
+}
+
+/* Container for the main discover section */
+.main-discover-container {
+    display: flex;
+    flex-direction: row;
+    padding: 10vw;
+}
+
+/* Styles for images within the main discover container */
+
+/* Container for the main popular tours section */
+.main-popular-tours-container {
+    padding: 5vw;
+    margin: -11vw 0 0 0;
+}
+
+/* Title styles for the main popular tours container */
+.main-popular-tours-container-title {
+    text-align: center;
+    font-size: 3vw;
+    padding-bottom: 3vw;
+}
+
+/* Container for the views within the main popular tours section */
+/* Style for the main container of popular tours */
+.main-popular-tours-container-view {
+    margin: 0vw -1vw -0vw -1vw;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    gap: 1vw; /* Adjust the gap between cards as needed */
+}
+
+/* Style for each tour card */
+.main-popular-tours-container-view-1 {
+    overflow: hidden;
+    width: 40vw; /* Adjust the card width as needed */
+}
+
+/* Style for the tour image */
+.main-places-container-img-view-1 {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style for the tour details */
+.main-popular-tours-container-view-1-body {
+    padding: 2vw;
+}
+
+/* Style for the tour title */
+.main-popular-tours-container-view-1-body-title {
+    font-size: 1vw;
+    margin: -1vw 0vw 2vw -2vw;
+}
+
+/* Style for the tour description */
+.main-popular-tours-container-view-1-body-comments {
+    font-size: 0.7vw;
+    margin-left: -2vw;
+    color: black;
+}
+
+/* Style for the tour footer */
+.main-popular-tours-container-view-1-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -1vw;
+    padding: 1vw;
+}
+
+/* Style for the views and followers text in the footer */
+.main-popular-tours-container-view-1-footer-views,
+.main-popular-tours-container-view-1-footer-followers {
+    font-size: 0.7vw;
+    color: black;
+}
+
+/* Container for the main images section */
+.main-images-container {
+    margin: 2vw -1vw 0 -1vw;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+}
+
+/* Styles for images within the main images container */
+.main-images-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main-images-container-img-view-1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.main-images-container-img-view-2 {
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.main-images-container-img-view-3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.main-images-container-button {
+    padding-top: 2vw;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 8;
+}
+
+.main-images-container-img-view-4 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 9;
+}
+
+.main-images-container-img-view-5 {
+    grid-column-start: 7;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 9;
+}
+
+.main-images-container-button-button {
+    text-decoration: none;
+    font-size: 0.7vw;
+    color: black;
+    border: 1px solid grey;
+    padding: 0.5vw 2vw 0.5vw 2vw;
+    text-align: center;
+}
+
+/* Container for the main review section */
+.main-review-container {
+    margin: 5vw 3vw -5vw 3vw;
+}
+
+/* Title styles for the main review container */
+.main-review-container-title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+/* Main Review Container */
+.main-review-container {
+    margin: 5vw 3vw -5vw 3vw;
+}
+
+.main-review-container-title {
+    font-size: 3vw;
+    text-align: center;
+}
+
+.main-review-container-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    margin: 2vw -5vw 0 -5vw;
+}
+
+/* Main Review Container List Item 1 */
+.main-review-container-list-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vw; /* Adjust margin as needed */
+    padding-right: 3vw;
+}
+
+.main-review-container-list-1-img-1 {
+    height: 0;
+    padding: 15vw 4vw 0 6vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    margin-right: 1vw;
+}
+
+.main-review-container-list-1-info {
+    flex: 1;
+    padding-right: 4vw;
+}
+
+.main-review-container-list-1-title-1 {
+    font-size: 1.5vw;
+    margin-top: -7vw;
+}
+
+.main-review-container-list-1-puntuation-1 {
+    padding-top: 1vw;
+    width: calc(60% - 10px); /* Reset the width for the third image */
+}
+
+.main-review-container-list-1-comment-1 {
+    font-size: 0.7vw;
+}
+
+.main-review-container-list-1-views-n-follows-1 {
+    display: flex;
+    position: relative;
+    top: 8vw;
+    list-style-type: none;
+    justify-content: space-between;
+    font-size: 0.5vw;
+}
+
+.main-review-container-list-1-follows-1,
+.main-review-container-list-1-views-1 {
+    /* Add styles for individual views and follows elements */
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid grey;
+    padding: 1vw 0vw 2vw 0vw;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw 3vw 0 3vw;
+    align-content: center;
+}
+
+/* Footer Containers */
+.footer-container-creator,
+.footer-container-misc,
+.footer-container-contact-goto {
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 0.7vw;
+    color: black;
+}
+
+.footer-container-misc {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Footer Links */
+.footer-container-explorer,
+.footer-container-discover {
+    padding: 0 1vw 0 1vw;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-container-contact-goto > a {
+    border: 1px solid black;
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    text-decoration: none;
+    color: black;
+}
