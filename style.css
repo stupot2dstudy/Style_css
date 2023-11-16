@@ -18,12 +18,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    z-index: 1;
 }
 
 .app {
     background-color: white;
-    z-index: -1;
+    z-index: 1;
 }
 
 /* Full Header Container */
